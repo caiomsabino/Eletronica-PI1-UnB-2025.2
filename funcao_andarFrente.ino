@@ -1,11 +1,11 @@
 // ==== Definição dos pinos da Ponte H ====
 
-// Motor A (lado esquerdo, por exemplo)
+// Motor A 
 #define IN1 27
 #define IN2 14
 #define ENA 26  // controle de velocidade (PWM)
 
-// Motor B (lado direito)
+// Motor B 
 #define IN3 23
 #define IN4 22
 #define ENB 21  // controle de velocidade (PWM)
