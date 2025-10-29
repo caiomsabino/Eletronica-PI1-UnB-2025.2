@@ -1,5 +1,4 @@
 // ==== Definição dos pinos da Ponte H ====
-
 // Motor A 
 #define IN1 27
 #define IN2 14
