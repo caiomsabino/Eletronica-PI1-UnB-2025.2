@@ -79,6 +79,19 @@ void andarTras(int velocidade) {
   analogWrite(ENB, velocidade);
 }
 
+//Função para o carrinho parar 
+void pararCarrinho() {
+  // Motor A parado
+  digitalWrite(IN1, LOW);
+  digitalWrite(IN2, LOW);
+  analogWrite(ENA, 0);
+
+  // Motor B parado
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+  analogWrite(ENB, 0);
+}
+
 // ==== Função para o carrinho virar para a direita ====
 void virarDireita(int velocidade) {
   // Garante que a velocidade fique dentro do limite do PWM
@@ -110,3 +123,5 @@ void virarEsquerda(int velocidade) {
   digitalWrite(IN2, LOW);
   analogWrite(ENA, 0);
 }
+
+
